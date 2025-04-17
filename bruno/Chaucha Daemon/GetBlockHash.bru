@@ -15,8 +15,8 @@ headers {
 }
 
 auth:basic {
-  username: chaucharpc
-  password: chauchapwd
+  username: {{user}}
+  password: {{password}}
 }
 
 body:json {
@@ -24,6 +24,6 @@ body:json {
     "jsonrpc": "2.0",
     "id":      "bruno",
     "method":  "getblockhash",
-    "params":  [0]
+    "params":  [1000]
   }
 }
