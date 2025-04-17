@@ -1,0 +1,29 @@
+meta {
+  name: DecodeRawTx
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://{{host}}:{{port}}
+  body: json
+  auth: basic
+}
+
+headers {
+  Content-Type: text/plain
+}
+
+auth:basic {
+  username: chaucharpc
+  password: chauchapwd
+}
+
+body:json {
+  {
+    "jsonrpc": "2.0",
+    "id":      "bruno",
+    "method":  "decoderawtransaction",
+    "params":  ["1b54ad13e84ece043533beb59d6b666047ffc77a4496034a101791601d711998"]
+  }
+}

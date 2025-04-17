@@ -6,3 +6,5 @@ Dockerfile for Chaucha Daemon
 $ make install
 $ make run
 ```
+
+Includes Bruno Collection for Example RPC calls

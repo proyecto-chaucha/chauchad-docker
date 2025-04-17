@@ -1,0 +1,29 @@
+meta {
+  name: GetBlock
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://{{host}}:{{port}}
+  body: json
+  auth: basic
+}
+
+headers {
+  Content-Type: text/plain
+}
+
+auth:basic {
+  username: chaucharpc
+  password: chauchapwd
+}
+
+body:json {
+  {
+    "jsonrpc": "2.0",
+    "id":      "bruno",
+    "method":  "getblock",
+    "params":  ["6e27bffd2a104bea1c870be76aab1cce13bebb0db40606773827517da9528174"]
+  }
+}

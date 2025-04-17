@@ -1,0 +1,29 @@
+meta {
+  name: GetBlockCount
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://{{host}}:{{port}}
+  body: json
+  auth: basic
+}
+
+headers {
+  Content-Type: text/plain
+}
+
+auth:basic {
+  username: chaucharpc
+  password: chauchapwd
+}
+
+body:json {
+  {
+    "jsonrpc": "2.0",
+    "id":      "bruno",
+    "method":  "getblockcount",
+    "params":  []
+  }
+}
